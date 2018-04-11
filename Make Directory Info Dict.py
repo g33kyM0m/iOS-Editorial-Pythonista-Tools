@@ -17,6 +17,8 @@ here = jn.join(dirList[0:-1])
 dirList = here.split(jn)
 dirName = dirList[-1]
 
+os.chdir(here)
+
 # GET LOCATION OF MAIN (DOCUMENTS) DIRECTORY IN TREE
 dirFind = 'Documents'
 findLoc = dirList.index(dirFind)
